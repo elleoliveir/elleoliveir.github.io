@@ -114,7 +114,7 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
   <div>
     <span class="eyebrow">Engenharia da Computação · UFPA</span>
     <h1>Adryele Costa de Oliveira</h1>
-    <p class="lead">Pesquisadora em Machine Learning no Laboratório de Eletromagnetismo Aplicado (LEA/UFPA), bolsista CNPq. Trabalho com detecção de anomalias em redes ópticas, análise de dados clínicos e modelos de linguagem rodando localmente.</p>
+    <p class="lead">Pesquisadora em Machine Learning no Laboratório de Eletromagnetismo Aplicado (LEA/UFPA), bolsista CNPq. Trabalho com detecção de anomalias em redes ópticas, análise de dados clínicos e modelos de linguagem rodando localmente, com RAG.</p>
     <div class="links">
       <a class="btn primary" href="mailto:adryelecosta0000@gmail.com">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>E-mail</a>
@@ -131,10 +131,11 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
   <h2>Projetos</h2>
   <div class="grid">
     <article class="card">
-      <h3>Assistente com RAG sobre as diretrizes da UFPA <span class="soon">em breve</span></h3>
+      <h3>RAG para monitoramento de redes ópticas</h3>
       <div class="meta">Projeto pessoal · 2026</div>
-      <p>Modelo de linguagem rodando localmente que busca trechos das diretrizes e normas da UFPA e responde com base nos documentos oficiais.</p>
-      <div class="tags"><span class="tag">Python</span><span class="tag">LLM local</span><span class="tag">RAG</span></div>
+      <p>Perguntas em linguagem natural sobre telemetria de uma rede óptica (BER, OSNR, potência de amplificadores). Busca vetorial com FAISS e LLM local, comparando respostas com e sem RAG.</p>
+      <div class="tags"><span class="tag">Python</span><span class="tag">RAG</span><span class="tag">FAISS</span><span class="tag">Ollama</span></div>
+      <a class="go" href="https://github.com/elleoliveir/rag-optical-monitoring">Ver código →</a>
     </article>
     <article class="card">
       <h3>Chatbot com LLM local</h3>
@@ -144,10 +145,25 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
       <a class="go" href="https://github.com/elleoliveir/chatbot-llm-local">Ver código →</a>
     </article>
     <article class="card">
-      <h3>Zetta: detecção de sonolência</h3>
-      <div class="meta">Projetos de Engenharia III · UFPA · 2025 · equipe de 4</div>
-      <p>App de monitoramento de motoristas. Desenvolvi a API de detecção de sonolência e distração (abertura dos olhos, bocejos e orientação do rosto) e telas do app mobile.</p>
-      <div class="tags"><span class="tag">Flask</span><span class="tag">OpenCV</span><span class="tag">MediaPipe</span><span class="tag">React Native</span></div>
+      <h3>UFPA Digital <span class="soon">em desenvolvimento</span></h3>
+      <div class="meta">Projeto pessoal · 2026</div>
+      <p>Assistente web para dúvidas sobre o regimento da UFPA e editais, com chat em Flask e LLM local via LangChain. Próxima etapa: busca nos documentos oficiais (RAG).</p>
+      <div class="tags"><span class="tag">Python</span><span class="tag">Flask</span><span class="tag">LangChain</span></div>
+      <a class="go" href="https://github.com/elleoliveir/UFPA-digital">Ver código →</a>
+    </article>
+    <article class="card">
+      <h3>Aprendizado por reforço no FrozenLake</h3>
+      <div class="meta">Projeto · 2026</div>
+      <p>Comparação entre PPO, A2C e DQN no FrozenLake-v1 escorregadio, com treino controlado, registro de recompensa por episódio e gráficos de média móvel.</p>
+      <div class="tags"><span class="tag">Python</span><span class="tag">Gymnasium</span><span class="tag">Stable-Baselines3</span></div>
+      <a class="go" href="https://github.com/elleoliveir/projetos-RL">Ver código →</a>
+    </article>
+    <article class="card">
+      <h3>Marble Time Rush: jogo 3D</h3>
+      <div class="meta">Computação Gráfica · UFPA · 2026 · em dupla</div>
+      <p>Plataforma 3D sem engine: shadow mapping, Blinn-Phong, quatérnions, física com checkpoints, 3 fases e editor de fases com ray casting pelo mouse.</p>
+      <div class="tags"><span class="tag">C++</span><span class="tag">OpenGL</span><span class="tag">GLSL</span></div>
+      <a class="go" href="https://github.com/elleoliveir/marble-run">Ver código →</a>
     </article>
     <article class="card">
       <h3>Missão Espacial: jogo 2D</h3>
@@ -155,6 +171,12 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
       <p>Jogo 2D com motor gráfico próprio em OpenGL Core Profile: shaders GLSL, animação por coordenadas UV, parallax, texturas procedurais e sistema de partículas.</p>
       <div class="tags"><span class="tag">Python</span><span class="tag">OpenGL</span><span class="tag">GLSL</span></div>
       <a class="go" href="https://github.com/Filipecorr34/Missao-Espacial">Ver código →</a>
+    </article>
+    <article class="card">
+      <h3>Zetta: detecção de sonolência</h3>
+      <div class="meta">Projetos de Engenharia III · UFPA · 2025 · equipe de 4</div>
+      <p>App de monitoramento de motoristas. Desenvolvi a API de detecção de sonolência e distração (abertura dos olhos, bocejos e orientação do rosto) e telas do app mobile.</p>
+      <div class="tags"><span class="tag">Flask</span><span class="tag">OpenCV</span><span class="tag">MediaPipe</span><span class="tag">React Native</span></div>
     </article>
   </div>
 </section>
@@ -210,9 +232,9 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
     <div>
       <h2>Habilidades</h2>
       <ul class="plain">
-        <li>Python; noções de Java, C/Arduino e Swift</li>
+        <li>Python, C++; noções de Java, C/Arduino e Swift</li>
         <li>Visão computacional: OpenCV, MediaPipe</li>
-        <li>Noções de LLMs locais e RAG</li>
+        <li>LLMs locais e RAG: Ollama, LangChain, FAISS</li><li>Aprendizado por reforço: Gymnasium, Stable-Baselines3</li>
         <li>React Native (Expo), Flask, Node.js/Express</li>
         <li>Git/GitHub, Google Colab, LaTeX, Excel</li>
       </ul>
